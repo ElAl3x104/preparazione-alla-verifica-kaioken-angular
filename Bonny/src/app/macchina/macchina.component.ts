@@ -8,4 +8,10 @@ import { Component, Input } from '@angular/core';
 })
 export class MacchinaComponent {
  @Input() TipoMacchina: string = "";
+ namesPezzi: string[]; //Creiamo il nostro vettore di stringhe 
+  constructor() { 
+     this.namesPezzi = ['Bulloni', 'Viti', 'Ferro',]; //Riempiamo il vettore
+  }
+  ngOnInit() {
+  }
 }
